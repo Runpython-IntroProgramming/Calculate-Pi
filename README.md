@@ -5,7 +5,7 @@ The purpose of this challenge is to practice using list comprehensions with inpu
 Write and submit a Python program that computes an approximate value of &pi; by calculating
 the following sum:
 
-![Pi Generator](http://www.texrendr.com/cgi-bin/mathtex.cgi?\dpi{168}%5Cpi%20%3D%204%20%5Cleft(1-%5Cfrac%7B1%7D%7B3%7D%2B%5Cfrac%7B1%7D%7B5%7D-%5Cfrac%7B1%7D%7B7%7D%20%2B%20%5Ccdots%20%20%2B%5Cfrac%7B(-1)%5En%7D%7B2n%2B1%7D%5Cright)%20%3D%204%20%5Csum_%7Bk%3D0%7D%5En%20%5Cfrac%7B(-1)%5Ek%7D%7B2k%2B1%7D)
+![Pi Generator](http://www.texrendr.com/cgi-bin/mathtex.cgi?\dpi{168}\pi = 4 \left(1-\frac{1}{3}+\frac{1}{5}-\frac{1}{7} + \cdots  +\frac{(-1)^n}{2n+1}\right) = 4 \sum_{k=0}^n \frac{(-1)^k}{2k+1})
 
             $$\pi = 4 \left(1-\frac{1}{3}+\frac{1}{5}-\frac{1}{7} + \cdots  +\frac{(-1)^n}{2n+1}\right) = 4 \sum_{k=0}^n \frac{(-1)^k}{2k+1}$$
             
