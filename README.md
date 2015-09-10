@@ -49,11 +49,37 @@ e = 1.0/sum([((-1.0)**k)/math.factorial(k) for k in range(0,n)])
 print("The approximate value of e is {0:.{precision}}".format(e, precision=sigfigs))
 print("(The true value of e is {0:.{precision}})".format(math.e, precision=sigfigs))
 ```
-One thing this example shows that you might be unfamiliar is the <code class="prettyprint">
-import math</code>. The Python import statement is used to load another Python program file at the 
-start of your program. In this case, <code class="prettyprint">math</code> is a standard Python
-library that contains a variety of common mathematical functions (we are using the factorial function).
-Look at the code example and notice that the name is prefaced with ```math```.
+
+The line:
+
+```python
+e = 1.0/sum([((-1.0)**k)/math.factorial(k) for k in range(0,n)])
+```
+
+Does all the work. Let's break it down.
+
+1. ```((-1.0)**k)/math.factorial(k)``` computes the value of each element (*k*) in the series.
+2. ```for k in range(0,n)``` generates *n* values of *k*.
+3. ```[((-1.0)**k)/math.factorial(k) for k in range(0,n)]``` is a *list comprehension* that 
+   generates a list of all *n* elements (numbers).
+4. ```sum([((-1.0)**k)/math.factorial(k) for k in range(0,n)])``` takes the list of elements
+   and computes the *sum* of them (this is the big "E" in the formula).
+5. ```1.0/sum([((-1.0)**k)/math.factorial(k) for k in range(0,n)])``` takes the *reciprocal* of
+   that sum!
+
+### Sig Figs
+
+Notice how the example code prints the results with a specific number of sig figs. Your code
+will need to do something similar. Remember how to do this!
+
+### Importing Libraries
+
+One thing this example shows that you may still be unfamiliar with is ```import math```. 
+The Python import statement is used to load another Python program file at the 
+start of your program. In this case, ```math``` is a standard Python
+library that contains a variety of common mathematical functions (we are using the factorial function
+in the example).
+Look at the code example and notice that ```factorial``` is prefaced with ```math.```.
 Any time you load external libraries like this, you can refer to them using this style (there are other
 ways of doing this, but this is the simplest). 
 
