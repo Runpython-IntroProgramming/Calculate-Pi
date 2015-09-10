@@ -56,7 +56,7 @@ The line:
 e = 1.0/sum([((-1.0)**k)/math.factorial(k) for k in range(0,n)])
 ```
 
-Does all the work. Let's break it down.
+does all the work. Let's break it down.
 
 1. ```((-1.0)**k)/math.factorial(k)``` computes the value of each element (*k*) in the series.
 2. ```for k in range(0,n)``` generates *n* values of *k*.
