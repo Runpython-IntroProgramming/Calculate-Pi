@@ -14,8 +14,8 @@ This sum approaches the true value of &pi; as n approaches &infin;.
 The big "E" thing in that equation means "add that thing to the right over and over again, but keep
 changing the value of k. The first value of k is zero, the last value is n and k goes up by one each time."
 
-Your program must ask the user how many terms to use in the estimate of &pi; then print the estimate
-using six significant figures. For example:
+Your program must ask the user how many terms to use in the estimate of &pi;, how many significant
+figures, then print the estimate using that many significant figures. Exactly like this:
 
 
 ```
