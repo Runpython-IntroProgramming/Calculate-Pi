@@ -14,13 +14,13 @@ This sum approaches the true value of &pi; as n approaches &infin;.
 The big "E" thing in that equation means "add that thing to the right over and over again, but keep
 changing the value of k. The first value of k is zero, the last value is n and k goes up by one each time."
 
-Your program must ask the user how many terms to use in the estimate of &pi;, how many significant
-figures, then print the estimate using that many significant figures. Exactly like this:
+Your program must ask the user how many terms to use in the estimate of &pi;, how many decimal
+places, then print the estimate using that many decimal places. Exactly like this:
 
 
 ```
 I will estimate pi. How many terms should I use? 100
-How many sig figs should I use in the result? 8
+How many decimal places should I use in the result? 8
 The approximate value of pi is 3.1315929
 ```
 
@@ -44,10 +44,10 @@ A sample Python program for estimating the value of <em>e</em> might look like t
 ```python 
 import math
 n = int(input("I will estimate e. How many terms should I use? "))
-sigfigs = int(input("How many sig figs should I use in the result? "))
+sigfigs = int(input("How many decimal places should I use in the result? "))
 e = 1.0/sum([((-1.0)**k)/math.factorial(k) for k in range(0,n)])
-print("The approximate value of e is {0:.{precision}}".format(e, precision=sigfigs))
-print("(The true value of e is {0:.{precision}})".format(math.e, precision=sigfigs))
+print("The approximate value of e is {0:.{1}f}".format(e, sigfigs))
+print("(The true value of e is {0:.{1}f})".format(math.e, sigfigs))
 ```
 
 The line:
@@ -69,7 +69,7 @@ does all the work. Let's break it down.
 
 ### Sig Figs
 
-Notice how the example code prints the results with a specific number of sig figs. Your code
+Notice how the example code prints the results with a specific number of decimal places. Your code
 will need to do something similar. Remember how to do this!
 
 ### Importing Libraries
