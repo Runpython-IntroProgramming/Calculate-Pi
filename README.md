@@ -44,10 +44,10 @@ A sample Python program for estimating the value of <em>e</em> might look like t
 ```python 
 import math
 n = int(input("I will estimate e. How many terms should I use? "))
-sigfigs = int(input("How many decimal places should I use in the result? "))
+decimals = int(input("How many decimal places should I use in the result? "))
 e = 1.0/sum([((-1.0)**k)/math.factorial(k) for k in range(0,n)])
-print("The approximate value of e is {0:.{1}f}".format(e, sigfigs))
-print("(The true value of e is {0:.{1}f})".format(math.e, sigfigs))
+print("The approximate value of e is {0:.{1}f}".format(e, decimals))
+print("(The true value of e is {0:.{1}f})".format(math.e, decimals))
 ```
 
 The line:
