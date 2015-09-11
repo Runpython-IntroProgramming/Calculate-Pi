@@ -20,7 +20,7 @@ places, then print the estimate using that many decimal places. Exactly like thi
 
 ```
 I will estimate pi. How many terms should I use? 100
-How many decimal places should I use in the result? 8
+How many decimal places should I use in the result? 7
 The approximate value of pi is 3.1315929
 ```
 
