@@ -67,7 +67,7 @@ does all the work. Let's break it down.
 5. ```1.0/sum([((-1.0)**k)/math.factorial(k) for k in range(0,n)])``` takes the *reciprocal* of
    that sum!
 
-### Sig Figs
+### Decimal Places
 
 Notice how the example code prints the results with a specific number of decimal places. Your code
 will need to do something similar. Remember how to do this!
